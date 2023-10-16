@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cstyles link -->
+    <link rel="stylesheet" href="./componentstyle/Cstyles.css">
+
+    <!-- font-family styles link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image" href="images/statusbar.jpg">
+</head>
+
+<body>
+    <!-- header section start -->
+    <section class="contact-header">
+        <nav>
+            <a href="#"><img src="images/logo1.png" alt="Logo"></a>
+            <div class="nav-link" id="links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="course.html">course</a></li>
+                    <li><a href="blogs.html">blog</a></li>
+                    <li><a href="contactus.html">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>contact us</h1>
+    </section>
+
+    <!-- header section end -->
+
+    <!-- contact us section -->
+
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384554.5368849016!2d72.1001853!3d34.063642449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1629868877450!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+
+            <div class="contact-col">
+                
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                      <h5>XYZ Road, ACB Building</h5>
+                      <p>Islamabad, Muree, In</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                      <h5>+923158877990</h5>
+                      <p>Monday to friday, 10AM to 10PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                      <h5>technical@gmail.com</h5>
+                      <p>Email us for information</p>
+                    </span>
+                </div>
+           
+            </div>
+            <div class="contact-col">
+
+                <form action="formhandler.php" method="POST">
+
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="Email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="submit" placeholder="Enter Your Subject" required>
+                    <textarea rows="10" name="message" placeholder="Place Your Message Here"></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section 6 start -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A veritatis asperiores assumenda nostrum vero,
+            ipsam,<br> aliquam aperiam dolorem rem porro amet iure neque delectus totam. Officiis optio dolore soluta
+            dolorem.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by easy tutorial.</p>
+    </section>
+
+
+
+    <script>
+        var navlinks = document.getElementById('links');
+
+        function showmenu() {
+            links.style.right = "0";
+        }
+        function hidemenu() {
+            links.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
